@@ -1,0 +1,401 @@
+/*-----------------------------------------------------------
+* Template Name    : Template | Responsive Template
+* Author           : IMAMHOSSAINBD
+* Version          : 1.0.0
+* Created          : March 2021
+* File Description : Main css file of the template
+*------------------------------------------------------------
+*/
+
+
+/***********************
+    1.BASIC
+    2.HELPER(Resusable)
+    3.NAV
+    4.OFFER
+    5.WINTER SECTION 
+    6.EXCLUSIVE
+    7.NEW
+    8.FASION TIPS
+    9.FOOTER
+    10.RESPONSIVE
+************************/
+
+
+
+/*======================
+        1.BASIC
+========================*/
+
+
+body {
+    /*    font-family: 'Nunito', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+
+
+
+.wrapper {
+    max-width: 650px;
+    margin: auto;
+    width: 100%;
+    background-color: var(--colorThree);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+/*======================
+  2.HELPER(Resusable)
+========================*/
+
+
+/* +++++++++++++++++++++++++++Color +++++++++++++++++++++++*/
+
+:root {
+    --colorOne: #86a5d1;
+
+    --colorTwo: #cde6e2;
+
+    --colorThree: #f9f9f9;
+
+    --colorFour: #010202;
+
+    --colorFive: #80c0b2;
+
+    --colorSix: #51686f;
+
+    --colorSeven: #903f21;
+
+
+}
+
+.btn1 {
+    color: var(--colorFive);
+    border: 1px solid var(--colorSix);
+    padding: .5rem 1rem;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+
+}
+
+.btn1:hover {
+    color: var(--colorFour);
+    border-radius: 10px;
+}
+
+.btn2 {
+    color: var(--colorSeven);
+    border: 1px solid var(--colorSix);
+    padding: .5rem 1rem;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+    background-color: var(--colorTwo);
+
+
+}
+
+.btn2:hover {
+    color: var(--colorFour);
+    border-radius: 10px;
+}
+
+.title {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--colorSix);
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+
+}
+
+.title::after {
+    content: " ";
+    display: block;
+    width: 0;
+    height: .1rem;
+    background-color: var(--colorSix);
+    -webkit-transition: 1s all;
+    transition: 1s all;
+    text-align: center;
+    margin: auto;
+}
+
+.title:hover::after {
+    width: 4rem;
+}
+
+.textDiv {
+    padding-top: 3rem;
+}
+
+
+.divSub {
+    font-style: italic;
+    font-size: .9rem;
+}
+
+
+
+/*======================
+        Header
+========================*/
+
+.top {
+    background: rgb(81, 104, 111);
+    background: -webkit-gradient(linear, left top, right top, from(rgba(81, 104, 111, 1)), to(rgba(128, 192, 178, 1)));
+    background: linear-gradient(90deg, rgba(81, 104, 111, 1) 0%, rgba(128, 192, 178, 1) 100%);
+
+}
+
+.top .text {
+    text-align: center;
+
+    font-size: 1rem;
+    padding: .5rem;
+
+
+}
+
+.top .text a {
+    color: var(--colorThree);
+}
+
+.header .logo {
+    text-align: center;
+    padding: .5rem;
+
+}
+
+.header .logo a img {
+    width: 100px;
+    margin: auto;
+}
+
+.header .nav {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--colorSix);
+}
+
+.header .nav li a {
+    color: var(--colorFour);
+    font-weight: bold;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+    text-transform: uppercase;
+}
+
+.header .nav li:hover a {
+    color: var(--colorFive);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*======================
+        4. OFFER
+========================*/
+
+.Offer {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--colorSix);
+}
+
+.Offer p {
+    color: var(--colorFour);
+
+}
+
+.Offer .offertxt {
+    font-weight: bold;
+    color: var(--colorFive);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding-top: 1rem;
+
+}
+
+.Offer .offertxt span {
+    -webkit-animation: animate 5s infinite;
+    animation: animate 5s infinite;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid red;
+}
+
+
+@-webkit-keyframes animate {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+@keyframes animate {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+/*======================
+     5. WINTER SECTION
+========================*/
+
+.winter {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--colorSix);
+}
+
+
+.winter .row {
+    --bs-gutter-x: 0;
+}
+
+
+/*======================
+       6. EXCUSIVE
+========================*/
+.exclusive {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--colorSix);
+
+}
+
+
+/*
+.exclusive .col-sm-4 img {
+    padding: 0 .5rem;
+}
+*/
+
+
+/*======================
+       7. NEW
+========================*/
+.new {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--colorSix);
+}
+
+
+/*======================
+       8. FASION TIPS
+========================*/
+.fasionTips {
+    padding-top: 1.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--colorSix);
+}
+
+.fasionTips .tipstitle {
+    color: var(--colorSix);
+
+    background-color: var(--colorTwo);
+    padding: 1.5rem .5rem;
+    text-align: center;
+}
+
+.fasionTips .tipstitle h4 {
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: .5rem;
+}
+
+.fasionTips .tipstitle a {
+    border: 1px solid var(--colorThree);
+    padding: .5rem;
+    display: inline-block;
+    color: var(--colorSix);
+
+}
+
+.fasionTips .tipstitle:hover a {
+    border: 1px dashed var(--colorFour);
+}
+
+
+/*======================
+       9. FOOTER 
+========================*/
+
+
+
+footer {
+    background-color: var(--colorSix);
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--colorFour);
+}
+
+footer .socialIcon {
+    padding-bottom: .5rem;
+}
+
+footer .socialIcon a {
+    color: var(--colorTwo);
+    font-size: 2rem;
+    padding: .5rem;
+
+
+}
+
+footer ul {
+    list-style-type: none;
+
+}
+
+footer ul li {
+    color: var(--colorTwo);
+}
+
+footer ul li a {
+    color: var(--colorFive);
+    -webkit-transition: 1s all;
+    transition: 1s all;
+}
+
+footer ul li a:hover {
+    color: var(--colorThree);
+}
